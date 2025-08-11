@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 20px;
+}
+
+.main {
+    display: none;
+}
+
+.container {
+    border-radius: 20px;
+    max-width: 450px;
+    width: 100%;
+    background-color: navy;
+    padding: 30px;
+}
+
+.input-contianer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    gap: 20px;
+}
+
+input {
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+span {
+    max-width: 40px;
+    width: 100%;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+span img {
+    width: 100%;
+}
+
+h6 {
+    font-size: 20px;
+    color: red;
+    margin: 0;
+}
+
+.cloud-div {
+    max-width: 150px;
+    width: 100%;
+
+    text-align: center;
+    margin: 10px auto;
+
+}
+
+.cloud-div img {
+    width: 100%;
+}
+
+.temp {
+    text-align: center;
+
+}
+
+.temp h1 {
+    font-size: 45px;
+}
+
+.temp p {
+    font-size: 32px;
+}
+
+.humidity-wind {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 50px;
+    padding-bottom: 30px;
+}
+
+.humidity,
+.wind {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.humidity img,
+.wind img {
+    max-width: 40px;
+    width: 100%;
+}
+
+@media(max-width:400px) {
+    .container {
+        padding: 15px;
+    }
+
+    .humidity-wind {
+        gap: 20px;
+    }
+
+    .humidity img,
+    .wind img {
+        max-width: 30px;
+
+    }
+}
