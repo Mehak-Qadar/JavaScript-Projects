@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(247, 187, 114);
+    padding: 40px;
+    overflow: hidden;
+
+}
+button {
+    max-width: 100px;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(49, 16, 4);
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    margin: 6px;
+}
+.toastcontainer{
+   
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+max-width: 300px;
+    width: 100%;
+}
+.toast{
+    background-color: white;
+   margin-block: 5px;
+   box-shadow: 0px 0px 9px rgb(49, 16, 4);;
+    padding: 10px;
+    position: relative;
+    animation:  come 0.5s forwards ;
+    transform: translateX(100%);
+    font-size: 20px;
+}
+@keyframes come{
+    100%{
+    transform: translateX(0);
+   
+}
+}
+.toast i{
+    color: green;
+}
+.toast.error i{
+color: red;
+}
+.toast.invalid i{
+color: orange;
+}
+.toast::after{
+    content: "";
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    background-color: green;
+    right: 0px;
+    bottom: 0;
+    animation: animi 5s linear ;
+}
+@keyframes animi{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+.toast.error::after{
+    background-color: red;
+}
+.toast.invalid::after{
+    background-color: orange;
+}
